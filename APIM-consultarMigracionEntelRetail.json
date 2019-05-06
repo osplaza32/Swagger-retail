@@ -1,0 +1,439 @@
+{
+  "definitions": {
+    "ResponseError400": {
+      "properties": {
+        "result": {
+          "$ref": "#/definitions/ResponseError400_result"
+        }
+      },
+      "type": "object"
+    },
+    "ResponseError400_result": {
+      "properties": {
+        "code": {
+          "example": "400",
+          "type": "string"
+        },
+        "description": {
+          "example": "Solicitud incorrecta",
+          "type": "string"
+        },
+        "descriptionDetail": {
+          "example": "La solicitud contiene sintaxis errónea y no debería repetirse.",
+          "type": "string"
+        },
+        "responseTimestamp": {
+          "example": "2018/05/10T17:49:56.080",
+          "type": "string"
+        },
+        "transactionId": {
+          "example": "0000016349eeab2d-2c9",
+          "type": "string"
+        }
+      }
+    },
+    "ResponseError401": {
+      "properties": {
+        "result": {
+          "$ref": "#/definitions/ResponseError401_result"
+        }
+      },
+      "type": "object"
+    },
+    "ResponseError401_result": {
+      "properties": {
+        "code": {
+          "example": "401",
+          "type": "string"
+        },
+        "description": {
+          "example": "No autorizado",
+          "type": "string"
+        },
+        "descriptionDetail": {
+          "example": "El token de autorización ingresado es inválido.",
+          "type": "string"
+        },
+        "responseTimestamp": {
+          "example": "2018/05/10T17:49:56.080",
+          "type": "string"
+        },
+        "transactionId": {
+          "example": "0000016349eeab2d-2c9",
+          "type": "string"
+        }
+      }
+    },
+    "ResponseError404": {
+      "properties": {
+        "result": {
+          "$ref": "#/definitions/ResponseError404_result"
+        }
+      },
+      "type": "object"
+    },
+    "ResponseError404_result": {
+      "properties": {
+        "code": {
+          "example": "404",
+          "type": "string"
+        },
+        "description": {
+          "example": "No encontrado",
+          "type": "string"
+        },
+        "descriptionDetail": {
+          "example": "Recurso no encontrado.",
+          "type": "string"
+        },
+        "responseTimestamp": {
+          "example": "2018/05/10T17:49:56.080",
+          "type": "string"
+        },
+        "transactionId": {
+          "example": "0000016349eeab2d-2c9",
+          "type": "string"
+        }
+      }
+    },
+    "ResponseError405": {
+      "properties": {
+        "result": {
+          "$ref": "#/definitions/ResponseError405_result"
+        }
+      },
+      "type": "object"
+    },
+    "ResponseError405_result": {
+      "properties": {
+        "code": {
+          "example": "405",
+          "type": "string"
+        },
+        "description": {
+          "example": "Metodo no permitido",
+          "type": "string"
+        },
+        "descriptionDetail": {
+          "example": "Una petición fue hecha a una URI utilizando un método de solicitud no soportado por dicha URI.",
+          "type": "string"
+        },
+        "responseTimestamp": {
+          "example": "2018/05/10T17:49:56.080",
+          "type": "string"
+        },
+        "transactionId": {
+          "example": "0000016349eeab2d-2c9",
+          "type": "string"
+        }
+      }
+    },
+    "ResponseError422": {
+      "properties": {
+        "result": {
+          "$ref": "#/definitions/ResponseError422_result"
+        }
+      },
+      "type": "object"
+    },
+    "ResponseError422_result": {
+      "properties": {
+        "code": {
+          "example": "422",
+          "type": "string"
+        },
+        "description": {
+          "example": "Entidad no procesada",
+          "type": "string"
+        },
+        "descriptionDetail": {
+          "example": "La solicitud está bien formada pero fue imposible seguirla debido a errores semánticos.",
+          "type": "string"
+        },
+        "responseTimestamp": {
+          "example": "2018/05/10T17:49:56.080",
+          "type": "string"
+        },
+        "transactionId": {
+          "example": "0000016349eeab2d-2c9",
+          "type": "string"
+        }
+      }
+    },
+    "ResponseError429": {
+      "properties": {
+        "result": {
+          "$ref": "#/definitions/ResponseError429_result"
+        }
+      },
+      "type": "object"
+    },
+    "ResponseError429_result": {
+      "properties": {
+        "code": {
+          "example": "429",
+          "type": "string"
+        },
+        "description": {
+          "example": "Límite de solicitudes excedido",
+          "type": "string"
+        },
+        "descriptionDetail": {
+          "example": "Se ha excedido el límite de solicitudes para un período de tiempo determinado.",
+          "type": "string"
+        },
+        "responseTimestamp": {
+          "example": "2018/05/10T17:49:56.080",
+          "type": "string"
+        },
+        "transactionId": {
+          "example": "0000016349eeab2d-2c9",
+          "type": "string"
+        }
+      }
+    },
+    "ResponseError500": {
+      "properties": {
+        "result": {
+          "$ref": "#/definitions/ResponseError500_result"
+        }
+      },
+      "type": "object"
+    },
+    "ResponseError500_result": {
+      "properties": {
+        "code": {
+          "example": "500",
+          "type": "string"
+        },
+        "description": {
+          "example": "Error en el servidor",
+          "type": "string"
+        },
+        "descriptionDetail": {
+          "example": "El servidor ha encontrado una error inesperado.",
+          "type": "string"
+        },
+        "responseTimestamp": {
+          "example": "2018/05/10T17:49:56.080",
+          "type": "string"
+        },
+        "transactionId": {
+          "example": "0000016349eeab2d-2c9",
+          "type": "string"
+        }
+      }
+    },
+    "387d0611-65e3-11e9-b96a-039465ca6fae": {
+      "type": "object",
+      "properties": {
+        "header": {
+          "type": "object",
+          "properties": {
+            "consumerId": {
+              "type": "string",
+              "example": "1212"
+            },
+            "applicationCode": {
+              "type": "string",
+              "example": "RIPLEY"
+            },
+            "countryCode": {
+              "type": "string",
+              "example": "CL"
+            },
+            "requestTimestamp": {
+              "type": "string",
+              "example": "2018-04-25T15:20:22.881-03:00"
+            }
+          }
+        },
+        "consultaMigracionReq": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "reqConsultaMigracion": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "storeId": {
+                      "type": "string",
+                      "example": "10004000"
+                    },
+                    "terminalId": {
+                      "type": "string",
+                      "example": "15064010"
+                    },
+                    "retailId": {
+                      "type": "string",
+                      "example": "RIPLEY"
+                    },
+                    "timestamp": {
+                      "type": "string",
+                      "example": "2018-01-23T11:02:50.750-03:00"
+                    },
+                    "numeroCel": {
+                      "type": "string",
+                      "example": "+56992148304"
+                    },
+                    "idTipoDocumento": {
+                      "type": "string",
+                      "example": "1"
+                    },
+                    "rut": {
+                      "type": "string",
+                      "example": "18878621"
+                    },
+                    "dv": {
+                      "type": "string",
+                      "example": "9"
+                    },
+                    "obs1": {
+                      "type": "string",
+                      "example": "NA"
+                    },
+                    "obs2": {
+                      "type": "string",
+                      "example": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "387d0610-65e3-11e9-b96a-039465ca6fae": {
+      "type": "object",
+      "properties": {
+        "noevisto": {
+          "type": "string",
+          "example": "no e visto el response exitosos"
+        }
+      }
+    }
+  },
+  "host": "10.49.22.7:8443",
+  "info": {
+    "description": "Esta API Permite la evalucion comercial de una persona en entel",
+    "title": "APIM-consultarMigracionEntelRetail",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/legacy/v1/consultarMigracionEntelRetail": {
+      "post": {
+        "consumes": [
+          "application/json"
+        ],
+        "description": "\n# 1. Modo de Consumo\n## 1.1 URI\n| Ambiente | API Endpoint                                              | Token Endpoint                      |\n| -------- |:----------------------------------------------------------|:----------------------------------------------------|\n| UAT      |https://apiexternaluat.entel.cl/legacy/v1/consultarMigracionEntelRetail | https://apiexternaluat.entel.cl/auth/oauth/v2/token |\n| PRD      |https://apiexternal.entel.cl/legacy/v1/consultarMigracionEntelRetail    | https://apiexternal.entel.cl/auth/oauth/v2/token   |\n\n\n# 2. Estructura de entrada (Request)\n## 2.1. Parametros Header\n\n| Campo            | Tipo              | Obligatorio | Descripcion                                                                                                                                                           | Valores posibles - Formato               |\n| -----------------| ------------------| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -----------------------------------------|\n| Content-Type     | string            | Si          | Indica el tipo de contenido del cuerpo del mensaje enviado al destinatario                                                                                            | application/json; charset=utf-8          |\n| Authorization    | string            | Si          | Token de acceso alfanumerico obtenido de la autenticación OAuth                                                                                                       | Bearer xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx  |\n| applicationCode  | string            | Si          | Código único que representa al sistema consumidor. Es responsabilidad del consumidor enviar este valor                                                                | [Posibles valores](https://tdentel.atlassian.net/wiki/download/attachments/565838019/Master%20Headers%20Codes%20eUSB.xlsx?version=3&modificationDate=1531253559009&cacheVersion=1&api=v2)                  |\n| countryCode      | string            | Si          | Identifica el país desde donde se origina la petición. Es responsabilidad del consumidor enviar este valor                                                            | CHL (Chile), PER (Perú)                  |\n| consumerId       | string            | Si          | Código único de identificación de la ejecución, que identifica el evento del consumidor. Es responsabilidad del consumir enviar este valor según las reglas definidas |[Reglas](https://tdentel.atlassian.net/wiki/download/attachments/1151374/Master%20Headers%20Codes%20eUSB.xlsx?api=v2) |\n| requestTimestamp | string (Datetime) | Si          | Fecha, hora y timezone en el cual se envía la petición del consumidor.                                                                                                | YYYY-MM-DDThh:mm:ss.sss-Z                |  \n\n\n\n## 3.2. Estructura Request Body\n\n    \n|Campo|Tipo|Descripción|Valores posibles - Formato|Valor de ejemplo|\n|:---|:---:|:---:|:---:|---:| \n|header|object||||\n|header.consumerId|string|el id del usuario que consumira esta api|||\n|header.applicationCode|string|el codigo de la aplicacion donde se usara esta API|||\n|header.countryCode|string|||CHL (Chile), PER (Perú)|\n|header.requestTimestamp|string||||\n|consultaMigracionReq|Array||||\n|consultaMigracionReq.reqConsultaMigracion|Array||||\n|consultaMigracionReq.reqConsultaMigracion.storeId|string||||\n|consultaMigracionReq.reqConsultaMigracion.terminalId|string||||\n|consultaMigracionReq.reqConsultaMigracion.retailId|string||||\n|consultaMigracionReq.reqConsultaMigracion.timestamp|string||||\n|consultaMigracionReq.reqConsultaMigracion.numeroCel|string||||\n|consultaMigracionReq.reqConsultaMigracion.idTipoDocumento|string||||\n|consultaMigracionReq.reqConsultaMigracion.rut|string||||\n|consultaMigracionReq.reqConsultaMigracion.dv|string||||\n|consultaMigracionReq.reqConsultaMigracion.obs1|string||||\n|consultaMigracionReq.reqConsultaMigracion.obs2|string||||        \n\n\n\n\n\n\n# 4. Estructura de salida (Response)\n\n\n|Campo|Tipo|Descripción|Valores posibles - Formato|Valor de ejemplo|\n|:---|:---:|:---:|:---:|---:|\nNo lo e podido ver\n\n\n\n\n# 5.  Códigos de  retorno\n\nA continuacion los posibles codigos retornados para este servicio\n\n| Code Status  HTTP                    | Descripción HTTP                                                                              |\n|--------------------------------------|:----------------------------------------------------------------------------------------------|\n| 200 - OK                             | Respuesta estándar para peticiones correctas.                                                 |\n| 201 - CREADO                         | La petición ha sido completada y ha resultado en la creación de un nuevo recurso.             |\n| 400 - PETICIÓN INCORRECTA            | La solicitud contiene sintaxis errónea y no debería repetirse.                                |\n| 401 - NO AUTORIZADO                  | El token de autorización ingresado es inválido.                                               |\n| 404 - NO ENCONTRADO                  | Recurso no encontrado.                                                                        |\n| 405 - MÉTODO NO PERMITIDO            | Una peticiÓn fue hecha a una URI utilizando un método de solicitud no soportado por dicha URI |\n| 422 - ENTIDAD NO PROCESADA           | La solicitud está bien formada pero fue imposible seguirla debido a errores semánticos.       |\n| 429 - LIMITE DE SOLICITUDES EXCEDIDO | Se ha excedido el límite de solicitudes para un período de tiempo determinado .               | \n| 500 - ERROR EN EL SERVIDOR           | El servidor ha encontrado un error inesperado.                                                |\n",
+        "parameters": [
+          {
+            "default": "ATG",
+            "description": "Código único que representa al sistema consumidor.",
+            "in": "header",
+            "name": "applicationCode",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "default": "1234",
+            "description": "Código único de identificación de la ejecución, que identifica el evento del consumidor.",
+            "in": "header",
+            "name": "consumerId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "default": "CHL",
+            "description": "Identifica el país desde donde se origina la petición.",
+            "in": "header",
+            "name": "countryCode",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "default": "2018-12-12T12:12:12.444-03:00",
+            "description": "Fecha, hora y timezone en el cual se envía la petición del consumidor.",
+            "in": "header",
+            "name": "requestTimestamp",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "description": "Estructura request a envíar.",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/387d0611-65e3-11e9-b96a-039465ca6fae"
+            }
+          }
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK - Operación concluida exitosa",
+            "schema": {
+              "$ref": "#/definitions/387d0610-65e3-11e9-b96a-039465ca6fae"
+            }
+          },
+          "400": {
+            "description": "Error - Parámetros invalidos",
+            "schema": {
+              "$ref": "#/definitions/ResponseError400"
+            }
+          },
+          "401": {
+            "description": "Error - Error de autenticación",
+            "schema": {
+              "$ref": "#/definitions/ResponseError401"
+            }
+          },
+          "404": {
+            "description": "Error - Recurso no encontrado.",
+            "schema": {
+              "$ref": "#/definitions/ResponseError404"
+            }
+          },
+          "405": {
+            "description": "Error - Método no permitido",
+            "schema": {
+              "$ref": "#/definitions/ResponseError405"
+            }
+          },
+          "422": {
+            "description": "Error - Error de procesamiento de la solicitud",
+            "schema": {
+              "$ref": "#/definitions/ResponseError422"
+            }
+          },
+          "429": {
+            "description": "Error - Límite de solicitudes excedido",
+            "schema": {
+              "$ref": "#/definitions/ResponseError429"
+            }
+          },
+          "500": {
+            "description": "Error - Error inesperado en el servidor",
+            "schema": {
+              "$ref": "#/definitions/ResponseError500"
+            }
+          }
+        },
+        "summary": "Enviar notificaciones a los clientes, a través del Notifications Gateway",
+        "tags": [
+          "evaluacionComercialEntelRetail"
+        ]
+      }
+    }
+  },
+  "schemes": [
+    "https"
+  ],
+  "swagger": "2.0"
+}
